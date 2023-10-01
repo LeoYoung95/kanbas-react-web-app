@@ -1,11 +1,42 @@
-<ul>
-  <li><a href="/public/Kanbas/Account/Profile/screen.html">Account</a></li>
-  <li><a href="/public/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-  <li><a href="/public/Kanbas/Courses/Home/screen.html">Courses</a></li>
-  <li><a href="#">Calendar</a></li>
-  <li><a href="#">Inbox</a></li>
-  <li><a href="#">History</a></li>
-  <li><a href="#">Studio</a></li>
-  <li><a href="#">Commons</a></li>
-  <li><a href="#">Help</a></li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css"/>
+    <script src="https://kit.fontawesome.com/25ab27c3ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Kanbas/custom-style.css">
+    <link rel="stylesheet" href="KanbasNavigation.css"/>
+</head>
+
+<body>
+
+<div id="kanbas-sidebar-container">
+
+    <div id="northeastern-icon-container">
+        <img id="northeastern-icon" src="/public/images/NU-icon.png" alt="Northeastern University Icon">
+    </div>
+
+    <nav id="kanbas-sidebar" class="bg-black">
+        <ul class="list-unstyled components">
+            <li><a class="active" href="/Kanbas/Account/Profile/Profile.html"><span><i
+                    class="fas fa-user"></i></span><span> Account</span></a></li>
+            <li><a href="/public/Kanbas/Dashboard/screen.html"><span><i class="fas fa-tachometer-alt"></i></span><span> Dashboard</span></a>
+            </li>
+            <li><a href="/public/Kanbas/Courses/Home/screen.html"><span><i
+                    class="fas fa-book"></i></span><span> Courses</span></a></li>
+            <li><a href="#"><span><i class="fas fa-calendar-alt"></i></span><span> Calendar</span></a></li>
+            <li><a href="#"><span><i class="fas fa-envelope"></i></span><span> Inbox</span></a></li>
+            <li><a href="#"><span><i class="fas fa-history"></i></span><span> History</span></a></li>
+            <li><a href="#"><span><i class="fas fa-desktop"></i></span><span> Studio</span></a></li>
+            <li><a href="#"><span><i class="fas fa-globe"></i></span><span> Commons</span></a></li>
+            <li><a href="#"><span><i class="fas fa-question-circle"></i></span><span> Help</span></a></li>
+        </ul>
+    </nav>
+
+</div>
+
+<script src="KanbasNavigation.js"></script>
+
+</body>
+
+</html>
