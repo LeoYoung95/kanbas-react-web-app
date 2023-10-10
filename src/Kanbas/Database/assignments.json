@@ -1,0 +1,174 @@
+[
+  {
+    "_id": "A101",
+    "title": "Propulsion Assignment",
+    "course": "RS101",
+    "dueDate": "2023-11-01T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A102",
+    "title": "Combustion Analysis",
+    "course": "RS101",
+    "dueDate": "2023-11-08T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A103",
+    "title": "Nozzle Design Project",
+    "course": "RS101",
+    "dueDate": "2023-11-15T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A201",
+    "title": "Aerodynamics Quiz",
+    "course": "RS102",
+    "dueDate": "2023-11-22T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A202",
+    "title": "Flow Analysis",
+    "course": "RS102",
+    "dueDate": "2023-11-29T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A203",
+    "title": "Heating Analysis",
+    "course": "RS102",
+    "dueDate": "2023-12-06T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A301",
+    "title": "Structural Design Task",
+    "course": "RS103",
+    "dueDate": "2023-12-13T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A302",
+    "title": "Orbital Calculations",
+    "course": "RS103",
+    "dueDate": "2023-12-20T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A303",
+    "title": "Systems Engineering Exam",
+    "course": "RS103",
+    "dueDate": "2023-12-27T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A401",
+    "title": "Astrodynamics Homework",
+    "course": "RS104",
+    "dueDate": "2024-01-03T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A402",
+    "title": "Celestial Mechanics Quiz",
+    "course": "RS104",
+    "dueDate": "2024-01-10T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A403",
+    "title": "Orbit Determination Project",
+    "course": "RS104",
+    "dueDate": "2024-01-17T23:59:00Z",
+    "points": 100
+  },
+
+  {
+    "_id": "A501",
+    "title": "Orbital Mechanics Assignment",
+    "course": "RS105",
+    "dueDate": "2024-01-24T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A502",
+    "title": "Kepler's Laws Quiz",
+    "course": "RS105",
+    "dueDate": "2024-01-31T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A503",
+    "title": "Satellite Design Project",
+    "course": "RS105",
+    "dueDate": "2024-02-07T23:59:00Z",
+    "points": 100
+  },
+
+  {
+    "_id": "A601",
+    "title": "Rocket Engineering Assignment",
+    "course": "RS106",
+    "dueDate": "2024-02-14T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A602",
+    "title": "Thrust Analysis Quiz",
+    "course": "RS106",
+    "dueDate": "2024-02-21T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A603",
+    "title": "Rocket Design Project",
+    "course": "RS106",
+    "dueDate": "2024-02-28T23:59:00Z",
+    "points": 100
+  },
+
+  {
+    "_id": "A701",
+    "title": "Space Environment Analysis",
+    "course": "RS107",
+    "dueDate": "2024-03-06T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A702",
+    "title": "Radiation Effects Quiz",
+    "course": "RS107",
+    "dueDate": "2024-03-13T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A703",
+    "title": "Space Weather Project",
+    "course": "RS107",
+    "dueDate": "2024-03-20T23:59:00Z",
+    "points": 100
+  },
+
+  {
+    "_id": "A801",
+    "title": "Spacecraft Systems Assignment",
+    "course": "RS108",
+    "dueDate": "2024-03-27T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A802",
+    "title": "Mission Planning Quiz",
+    "course": "RS108",
+    "dueDate": "2024-04-03T23:59:00Z",
+    "points": 100
+  },
+  {
+    "_id": "A803",
+    "title": "Spacecraft Integration Project",
+    "course": "RS108",
+    "dueDate": "2024-04-10T23:59:00Z",
+    "points": 100
+  }
+]

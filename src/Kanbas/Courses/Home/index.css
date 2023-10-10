@@ -1,0 +1,8 @@
+.btn-fixed-width {
+    width: 260px;  /* Or whatever width you want */
+    text-align: left;
+}
+
+.red-url a{
+    color: #971c26;
+}

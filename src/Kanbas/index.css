@@ -11,15 +11,16 @@ body, html {
 }
 
 
-.second-sidebar {
-    padding-top: 100px;
-    left: 80px;
-    width: 190px;
+.second-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.second-sidebar ul {
+.second-sidebar ul li {
     padding-left: 20px;
 }
+
 
 .second-sidebar ul li a {
     color: #b91e2a;
@@ -83,6 +84,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 
 
@@ -95,7 +98,6 @@ a {
     width: 270px;
     margin: auto;
 }
-
 
 
 .course-card a {
@@ -143,9 +145,9 @@ a {
     padding-left: 3rem;
 }
 
-.btn-lightgrey {
-    background-color: #f7f7f7;
-    border: 1px solid #e0e0e0;
+.btn-lightgrey-new {
+    background-color: #464242;
+    border: 1px solid #464242;
 }
 
 .button-custom {
@@ -191,6 +193,10 @@ a {
 
 .min-with-150 {
     min-width: 150px;
+}
+
+.min-with-200 {
+    min-width: 200px;
 }
 
 .min-with-300 {
@@ -318,8 +324,8 @@ a {
 }
 
 .custom-container {
-    width: max-content;  /* Adjust width according to the content */
-    margin: auto;  /* Optionally center the container */
+    width: max-content; /* Adjust width according to the content */
+    margin: auto; /* Optionally center the container */
 }
 
 .flex-container {
@@ -349,7 +355,6 @@ a {
 }
 
 
-
 th {
     background-color: lightgrey;
     padding: 10px;
@@ -371,11 +376,76 @@ td {
     color: #971c26;
 }
 
-.nav-tabs a{
+.nav-tabs a {
     color: #971c26;
 }
 
 .table-a a {
     text-decoration: none;
     color: inherit;
+}
+
+.main-title-dashboard {
+    padding-left: 20px;
+    padding-bottom: 15px;
+    border-bottom: lightgray 1px solid;
+    width: 100vw;
+}
+
+.main-title-courses {
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    border-bottom: lightgray 1px solid;
+    width: 100vw;
+    font-size: 1.5rem;
+}
+
+.main-title-courses nav {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 40px); /* Adjusted width considering icon and some margin */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-sub-title {
+    padding-left: 30px;
+    padding-bottom: 5px;
+    border-bottom: lightgray 1px solid;
+}
+
+.top-button {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: lightgrey 1px solid;
+}
+
+
+.no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+.padding-for-kabas-nav {
+    margin-left: 80px;
+    flex-grow: 1;
+}
+
+.list-group-item-secondary {
+    display: flex;
+    align-items: center;
+}
+
+.list-group-item-secondary i,
+.list-group-item-secondary button {
+    margin-left: auto;  /* Pushes the icons and button to the right */
+}
+
+.list-group-item-secondary p {
+    margin-bottom: 0;  /* Removes bottom margin from the paragraph */
+    font-size: 16px;   /* Adjusts the font size */
+    line-height: 1.5;  /* Adjusts the line height */
 }
