@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/Kanbas/custom-style.css"/>
+    <link rel="stylesheet" href="/Kanbas/KanbasNavigation/KanbasNavigation.css"/>
+    <link rel="stylesheet" href="/Kanbas/TitleBar/TitleBar.css">
+</head>
+
+<body>
+
+<div class="container-fluid no-padding">
+    <div class="row flex">
+
+        <div id="breadcrumbPlaceholder" class="min-with-600"></div>
+
+    </div>
+
+
+    <div class="row flex">
+
+        <div id="kanbas-navigation-placeholder" class="col-lg-1 col-md-1 d-none d-md-block kanbas-align-left"></div>
+
+        <div id="account-navigation-placeholder" class="col-lg-2 col-md-1 d-none d-md-block min-with-150"></div>
+
+
+        <div class="content-container-2bar col-lg-6 col-md col-sm-10 max-with-400">
+
+
+            <div>
+                <i class="fas fa-user account-profile-icon"></i>
+            </div>
+
+
+            <!-- Name Input -->
+            <div class="mb-3">
+                <label for="professor_name" class="form-label">Name:*</label>
+                <input type="text" id="professor_name" value="Jose Annunziato" class="form-control">
+            </div>
+
+            <!-- Pronouns Select -->
+            <div class="mb-3">
+                <label for="professor_pronouns" class="form-label">Pronouns:</label>
+                <div class="custom-select">
+                    <select name="pronouns" id="professor_pronouns" class="form-control">
+                        <option value="none">None</option>
+                        <option value="he">He/Him</option>
+                        <option value="she">She/Her</option>
+                        <option value="they">They/Them</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+
+            </div>
+
+            <!-- TitleBar Input -->
+            <div class="mb-3">
+                <label for="professor_title" class="form-label">Title:</label>
+                <input type="text" id="professor_title" class="form-control">
+            </div>
+            <br>
+
+            <!-- Contact -->
+            <h2>Contact</h2>
+            <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
+            <br>
+
+            <!-- Biography -->
+            <h2>Biography</h2>
+            <div class="mb-3">
+                <textarea cols="50" rows="10" class="form-control">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
+            </div>
+            <br>
+
+            <!-- Links -->
+            <h2>Links</h2>
+            <a href="#">YouTube &rarr; Links to an external site.</a>
+            <br><br>
+
+            <div class="row">
+                <div class="col-4">
+                    <h5>Title</h5>
+                    <input type="text" placeholder="Youtube" class="form-control mb-2">
+                </div>
+
+                <div class="col-auto">
+                    <h5 class="hidden">Title</h5>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+
+                <div class="col-4">
+                    <h5>URL</h5>
+                    <div class="input-group mb-2">
+                        <input type="text" placeholder="https://www.youtube.com" class="form-control">
+
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <h5 class="hidden">Title</h5>
+                    <button class="btn bg-white" type="button">
+                        <i class="fas fa-times text-danger"></i>
+                    </button>
+                </div>
+
+
+
+            </div>
+
+
+
+
+            <div class="mt-3 mb-3">
+                <button class="btn btn-secondary">Add Another Link</button>
+            </div>
+            <hr>
+
+            <div class="mb-3 float-end">
+                <a href="/Kanbas/Account/Profile/Profile.html" class="btn btn-secondary me-2"><i
+                        class="fas fa-pencil-alt"></i> Cancel</a>
+                <button class="btn btn-danger"><i class="fas fa-pencil-alt"></i> Save Profile</button>
+            </div>
+
+
+        </div>
+
+        <div class="content-container-extra-col col-md-1 min-with-300">
+            <a href="/Kanbas/Account/Profile/Profile.html"
+               class="btn btn-lightgrey">
+                <i class="fas fa-pencil-alt"></i> Cancel Editing
+            </a>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="https://kit.fontawesome.com/25ab27c3ce.js" crossorigin="anonymous"></script>
+
+<script type="module">
+    import KanbasNavigation from "/Kanbas/KanbasNavigation/KanbasNavigation.js";
+
+    // Render the KanbasNavigation component
+    const kanbasNavContainer = document.getElementById('kanbas-navigation-placeholder');
+    kanbasNavContainer.innerHTML = KanbasNavigation('Account');
+</script>
+
+<script type="module">
+    import AccountNavigation from "/Kanbas/Account/AccountNavigation/AccountNavigation.js";
+
+    const accountNavContainer = document.getElementById('account-navigation-placeholder');
+    accountNavContainer.innerHTML = AccountNavigation('Profile');
+</script>
+
+<script src="/Kanbas/TitleBar/TitleBar.js"></script>
+<script>
+    generateTitleBar(
+        [
+            {label: 'Jose Annunziato\'s Profile', href: '#'},
+        ],
+        {show: true, href: 'https://example.com'},
+        {show: true, label: 'Student View', href: '#', icon: 'fa-glasses'},
+        'breadcrumbPlaceholder',
+        '/Kanbas/Courses/Home/Home-KanbasNav.html',
+        '/Kanbas/Courses/Home/Home-CourseNav.html'
+    );
+</script>
+
+</body>
+
+</html>
+

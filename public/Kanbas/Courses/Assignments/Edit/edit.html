@@ -1,0 +1,129 @@
+<select>
+    <option>SpeedGrader</option>
+</select>
+<hr />
+
+<label for="assignmentName"><h3>Assignment Name</h3></label>
+<input
+        type="text"
+        value="Assingment 1 - EVV + HTML"
+        id="assignmentName"
+        placeholder="Assignment Name"
+        size="30"
+/>
+
+<br>
+<br>
+Description
+<br>
+<textarea cols="50" rows="5">
+This is the assignment description.
+</textarea>
+
+<br>
+<br>
+Points
+<br>
+<input value="100" type="number" max="100" min="50" step="5" />
+
+<br>
+<br>
+Assignment Group
+<br>
+<select>
+    <option>ASSIGNMENTS</option>
+</select>
+
+<br>
+<br>
+Display Grade As
+<br>
+<select>
+    <option>Percentage</option>
+</select>
+
+<br>
+<br>
+Submission Type
+<br>
+<select>
+    <option>Online</option>
+</select>
+
+<br>
+<br>
+Online Entry Options
+<br>
+<input type="checkbox" value="TEXT_ENTRY" name="check-entry" id="chkbox-text-entry"/>
+<label for="chkbox-text-entry">Text Entry</label><br/>
+
+<input type="checkbox" value="WEBSITE_URL" name="check-entry" id="chkbox-website-url"/>
+<label for="chkbox-website-url">Website URL</label><br/>
+
+<input type="checkbox" value="MEDIA_RECORDINGS" name="check-entry" id="chkbox-media-recordings"/>
+<label for="chkbox-media-recordings">Media Recordings</label><br/>
+
+<input type="checkbox" value="STUDENT_ANNOTATION" name="check-entry" id="chkbox-student-annotation"/>
+<label for="chkbox-student-annotation">Student Annotation</label><br/>
+
+<input type="checkbox" value="FILE_UPLOADS" name="check-entry" id="chkbox-file-uploads"/>
+<label for="chkbox-file-uploads">File Uploads</label>
+
+<br>
+<br>
+Submission Attempts
+<br>
+<select>
+    <option>Unlimited</option>
+    <option>Once</option>
+</select>
+
+<br>
+<br>
+Plagiarism Review
+<br>
+<select>
+    <option>None</option>
+    <option>Yes</option>
+</select>
+
+<br>
+<br>
+Group Assignment
+<br>
+<input type="checkbox" value="GROUP_ASSIGNMENT" name="check-group-assignment" id="chkbox-group-assignment"/>
+<label for="chkbox-group-assignment">This is a group assignment</label>
+
+<br>
+<br>
+Peer Reviews
+<br>
+<input type="checkbox" value="PEER_REVIEW" name="check-peer-review" id="chkbox-peer-review"/>
+<label for="chkbox-peer-review">Require Peer Reviews</label>
+
+<br>
+<br>
+<label for="alignTo">Align To</label><br>
+<input
+        type="text"
+        value="Everyone"
+        id="alignTo"
+        placeholder="Everyone"
+        size="30"
+/>
+
+<br>
+<br>
+<label for="due-date">Due:</label><br>
+<input type="date" id="due-date" name="due-date" value="2023-09-01"><br><br>
+
+<label for="available-from">Available From:</label><br>
+<input type="date" id="available-from" name="available-from" value="2023-09-01"><br><br>
+
+<label for="until-date">Until:</label><br>
+<input type="date" id="until-date" name="until-date" value="2023-09-01"><br><br>
+
+<a href="/Kanbas/Courses/Assignments/index.html"><button>Cancel</button></a>
+
+
+<button>Save</button>
