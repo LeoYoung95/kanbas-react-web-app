@@ -48,7 +48,7 @@ function Dashboard({
                 </div>
             </div>
 
-            <h3 className="main-sub-title">Published Courses</h3>
+            <h3 className="main-sub-title">Published Courses (8)</h3>
 
             <div className="courses-grid d-flex flex-wrap col-9">
                 {courses.map((course) => (

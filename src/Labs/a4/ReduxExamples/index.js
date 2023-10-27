@@ -8,10 +8,10 @@ const ReduxExamples = () => {
     return (
         <div>
             <h2>Redux Examples</h2>
-            <TodoList/>
-            <AddRedux/>
-            <CounterRedux/>
             <HelloRedux/>
+            <CounterRedux/>
+            <AddRedux/>
+            <TodoList/>
         </div>
     );
 };

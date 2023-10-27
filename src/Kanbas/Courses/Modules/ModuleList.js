@@ -63,14 +63,13 @@ function ModuleList() {
                                         <h3>{module.name}</h3>
                                     </div>
                                     <div className="col-4">
-
-                                        <button className={"btn btn-primary"}
-                                            onClick={() => dispatch(setModule(module))}>
-                                            Edit
-                                        </button>
                                         <button className={"btn btn-danger"}
                                             onClick={() => dispatch(deleteModule(module._id))}>
                                             Delete
+                                        </button>
+                                        <button className={"btn btn-success"}
+                                                onClick={() => dispatch(setModule(module))}>
+                                            Edit
                                         </button>
                                     </div>
                                     <p>{module.description}</p>
