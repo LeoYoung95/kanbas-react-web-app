@@ -1,0 +1,105 @@
+
+#kanbas-sidebar-container {
+    background-color: black;
+    display: inline-block;
+}
+
+
+#kanbas-sidebar {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 77px;
+    margin-top: 0;
+    background-color: black;
+}
+
+#kanbas-sidebar a span {
+    display: block;
+    text-align: center;
+}
+
+#kanbas-sidebar ul.components {
+    padding: 0;
+}
+
+#kanbas-sidebar ul li a {
+    font-size: 12px;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    background-color: black;
+    margin: 6px 0;
+    display: block;
+}
+
+#kanbas-sidebar ul li a i {
+    color: #b91e2a;
+}
+
+#kanbas-sidebar ul li a:hover #kanbas-sidebar ul li a.active {
+    background-color: white;
+    color: #b91e2a;
+}
+
+#kanbas-sidebar ul li a.active {
+    background-color: white;
+    color: #b91e2a;
+}
+
+#kanbas-sidebar ul li a.active i {
+    color: #b91e2a;
+}
+
+#kanbas-sidebar a {
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#kanbas-sidebar a:hover, #kanbas-sidebar a.active {
+    background-color: #5a5a5a;
+}
+
+#kanbas-sidebar  i.fas.fa-user {
+    color: grey;
+}
+
+#kanbas-sidebar ul li:first-child a {
+
+    margin-top: 60px;
+}
+
+#kanbas-sidebar ul li:first-child a.active {
+
+    margin-top: 42px;
+}
+
+#kanbas-sidebar .fas {
+    font-size: 24px;
+}
+
+.kanbas-align-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#kanbas-sidebar-container-small {
+    background-color: white;
+    display: inline-block;
+}
+
+
+#kanbas-sidebar-small {
+    left: 0;
+    height: 100%;
+    margin-top: 20px;
+    background-color: white;
+}
+
+#kanbas-sidebar-small ul li a {
+    font-size: 12px;
+    padding: 20px;
+    margin: 6px 0;
+    display: block;
+}

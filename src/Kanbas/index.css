@@ -1,0 +1,456 @@
+body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-container {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.second-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.second-sidebar ul li {
+    padding-left: 20px;
+}
+
+
+.second-sidebar ul li a {
+    color: #b91e2a;
+    text-decoration: none;
+    padding: 8px 8px 8px;
+    display: block;
+    border-left: 3px solid transparent;
+}
+
+.second-sidebar ul li a.active {
+    color: black;
+    border-left: 3px solid black;
+}
+
+.account-profile-icon {
+    font-size: 80px;
+    color: grey;
+}
+
+.account-edit-btn {
+    float: right;
+}
+
+.content-container-2bar {
+    padding-top: 70px;
+    background-color: #ffffff;
+    min-height: calc(100vh - 70px);
+    flex-grow: 1;
+}
+
+.content-container-1bar {
+    padding-top: 70px;
+    background-color: #ffffff;
+    min-height: calc(100vh - 70px);
+    justify-content: flex-start;
+}
+
+.content-container-extra-col {
+    padding-top: 70px;
+    background-color: #ffffff;
+    min-height: calc(100vh - 70px);
+    margin-left: 30px;
+}
+
+
+.account-edit-btn {
+    display: inline-block;
+}
+
+
+.btn-light:active {
+    background-color: #b91e2a;
+}
+
+a {
+    color: #b91e2a;
+}
+
+
+.courses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+
+.course {
+    background: transparent;
+}
+
+
+.course-card {
+    width: 270px;
+    margin: auto;
+}
+
+
+.course-card a {
+    color: #1c4def;
+}
+
+
+.breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0;
+}
+
+.breadcrumb .breadcrumb-item a {
+    color: dimgrey;
+}
+
+.breadcrumb .breadcrumb-item.active {
+    color: black;
+}
+
+.content-container-2bar {
+    flex-grow: 1; /* Allow main content to grow and fill available space */
+    margin-left: 20px; /* Add a left margin to create space between course nav and main content */
+}
+
+
+.content-container-2bar .float-end {
+    margin-bottom: 10px;
+}
+
+.list-group a {
+    color: #971c26;
+}
+
+
+.list-group a:hover {
+    color: darkred;
+}
+
+.pl-4 {
+    padding-left: 1rem;
+}
+
+.pl-8 {
+    padding-left: 3rem;
+}
+
+.btn-lightgrey-new {
+    background-color: #464242;
+    border: 1px solid #464242;
+}
+
+.button-custom {
+    width: 70%;
+    text-align: left;
+}
+
+.button-custom-half {
+    width: 35%;
+    text-align: center;
+}
+
+
+.custom-btn-height {
+    height: 38px;
+    font-size: clamp(12px, 2vw, 18px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-btn-height-small {
+    height: 20px;
+    font-size: clamp(12px, 1vw, 18px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2e3e5;
+    color: black;
+}
+
+.button-group {
+    display: flex;
+    gap: 5px; /* Replaces inline margin styles */
+}
+
+
+.min-with-150 {
+    min-width: 150px;
+}
+
+.min-with-200 {
+    min-width: 200px;
+}
+
+.min-with-300 {
+    min-width: 300px;
+}
+
+.min-with-400 {
+    min-width: 400px;
+}
+
+.min-with-500 {
+    min-width: 500px;
+}
+
+.min-with-600 {
+    min-width: 600px;
+}
+
+.min-with-700 {
+    min-width: 700px;
+}
+
+.min-with-800 {
+    min-width: 800px;
+}
+
+.min-with-900 {
+    min-width: 900px;
+}
+
+.min-with-1000 {
+    min-width: 1000px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.max-with-400 {
+    max-width: 400px;
+}
+
+/* Style the custom select container */
+.custom-select {
+    position: relative;
+    width: 200px; /* Adjust the width as needed */
+}
+
+/* Style the select element */
+.custom-select select {
+    appearance: none; /* Remove default styles (arrow) on some browsers */
+    -webkit-appearance: none; /* Remove default styles (arrow) on WebKit-based browsers */
+    -moz-appearance: none; /* Remove default styles (arrow) on Firefox */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Style the arrow (using a pseudo-element) */
+.custom-select::after {
+    content: '\25BC'; /* Downward arrow character */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    pointer-events: none; /* Make sure the arrow doesn't interfere with select interaction */
+}
+
+/* Style the arrow icon */
+.input-group-text i {
+    color: #333; /* Adjust arrow color as needed */
+}
+
+/* Style the arrow icon */
+.input-group-append .input-group-text i {
+    color: #333; /* Adjust arrow color as needed */
+}
+
+/* Style the 'X' button */
+.transparent-bg {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.transparent-bg:hover {
+    background-color: transparent;
+    color: red; /* Change the color on hover */
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.search-input {
+    border: 1px solid grey; /* Style border as grey */
+    /* Additional styling */
+    padding: 5px;
+    outline: none; /* Removes the browser default focus outline */
+}
+
+.search-input:focus {
+    border-color: grey; /* Optional: Changes the border color when input is focused */
+}
+
+.icon-group {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px; /* Provides spacing between icons */
+}
+
+.content-fit-width {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.custom-container {
+    width: max-content; /* Adjust width according to the content */
+    margin: auto; /* Optionally center the container */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.custom-border {
+    border: 1.5px solid lightgrey; /* Change color as needed */
+    padding: 20px; /* Adjust padding as needed */
+    margin: 5px;
+}
+
+.icon-spacing {
+    margin-right: 5px; /* Adjust the margin to your desired spacing */
+}
+
+.table {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+th {
+    background-color: lightgrey;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.small-text {
+    font-size: 80%; /* You can adjust the font size as needed */
+}
+
+.student-name {
+    color: #971c26;
+}
+
+.nav-tabs a {
+    color: #971c26;
+}
+
+.table-a a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-title-dashboard {
+    padding-left: 20px;
+    padding-bottom: 15px;
+    border-bottom: lightgray 1px solid;
+    width: 100vw;
+}
+
+.main-title-courses {
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    border-bottom: lightgray 1px solid;
+    width: 100vw;
+    font-size: 1.5rem;
+}
+
+.main-title-courses nav {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 40px); /* Adjusted width considering icon and some margin */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-sub-title {
+    padding-left: 30px;
+    padding-bottom: 5px;
+    border-bottom: lightgray 1px solid;
+}
+
+.main-sub-title-2 {
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+
+.top-button {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: lightgrey 1px solid;
+}
+
+
+.no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+.padding-for-kabas-nav {
+    margin-left: 80px;
+    flex-grow: 1;
+}
+
+.list-group-item-secondary {
+    display: flex;
+    align-items: center;
+}
+
+.list-group-item-secondary i,
+.list-group-item-secondary button {
+    margin-left: auto;  /* Pushes the icons and button to the right */
+}
+
+.list-group-item-secondary p {
+    margin-bottom: 0;  /* Removes bottom margin from the paragraph */
+    font-size: 16px;   /* Adjusts the font size */
+    line-height: 1.5;  /* Adjusts the line height */
+}
