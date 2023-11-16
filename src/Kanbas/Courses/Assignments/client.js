@@ -24,8 +24,9 @@ export const updateAssignment = async (courseId, assignment) => {
     return response.status;
 };
 
-export const deleteAssignment = async (courseId, assignment) => {
-    await axios.delete(
-        `${URL}/${courseId}/${assignment._id}`
+export const deleteAssignment = async (courseId, assignmentId) => {
+    const response = await axios.delete(
+        `${URL}/${courseId}/${assignmentId}`
     );
+    console.log("deleteAssignment-status:",response.status)
 }

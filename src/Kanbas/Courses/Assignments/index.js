@@ -24,6 +24,7 @@ function Assignments() {
             dispatch(setAssignments_reducer(assignments))
         );
         console.log("re-render assignments")
+        console.log("courseId: ",courseId)
     }, [courseId]);
 
 
@@ -37,14 +38,15 @@ function Assignments() {
     const handleAddAssignment = () => {
         addNewAssignment(courseId, assignment).then((assignment) => {
             dispatch(addAssignment_reducer(assignment));
-        });
 
+        });
     }
 
     const handleDeleteAssignment = (assignmentId) => {
         deleteAssignment(courseId, assignmentId).then((status) => {
             dispatch(deleteAssignment_reducer(assignmentId));
         });
+
     }
 
     const handleUpdateAssignment = async () => {

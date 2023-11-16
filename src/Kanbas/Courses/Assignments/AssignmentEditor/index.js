@@ -29,6 +29,11 @@ function AssignmentEditor() {
         });
     };
 
+    const handleCancel = () => {
+        dispatch(resetCurrentAssignment_reducer());
+        navigate(`/Kanbas/Courses/${courseId}/Assignments`);
+    }
+
 
     return (
         <div>
@@ -63,9 +68,9 @@ function AssignmentEditor() {
             </div>
 
             <div className='d-flex justify-content-end padding-bottom-10 border-bottom padding-top-20'>
-                <Link to={`/Kanbas/Courses/${courseId}/Assignments`} className="btn btn-danger">
+                <button onClick={handleCancel} className="btn btn-danger">
                     Cancel
-                </Link>
+                </button>
                 <button onClick={handleSave} className="btn btn-success me-2">
                     Save
                 </button>

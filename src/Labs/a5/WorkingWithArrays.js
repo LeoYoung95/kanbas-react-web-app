@@ -251,12 +251,12 @@ function WorkingWithArrays() {
 
 
             <button onClick={postTodo}
-                    className="btn btn-primary mb-2 w-100">
+                    className="btn btn-warning mb-2 w-100">
                 Post Todo
             </button>
 
             <button onClick={createTodo}
-                    className="btn btn-warning mb-2 w-100">
+                    className="btn btn-primary mb-2 w-100">
                 Create Todo
             </button>
 
