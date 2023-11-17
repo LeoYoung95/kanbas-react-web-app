@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+const BASE= process.env.REACT_APP_BASE;
 function WorkingWithObjects() {
     const [assignment, setAssignment] = useState({
         id: 1,
@@ -9,7 +10,7 @@ function WorkingWithObjects() {
         completed: false,
         score: 0,
     });
-    const URL = "http://localhost:4000/a5/assignment";
+    const URL = `${BASE}/a5/assignment`;
     const fetchAssignment = async () => {
         const response = await axios.get(`${URL}`);
         setAssignment(response.data);
@@ -30,14 +31,14 @@ function WorkingWithObjects() {
             <h3>Working With Objects</h3>
 
             <h4>Retrieving Objects</h4>
-            <a href="http://localhost:4000/a5/assignment"
+            <a href={`${URL}`}
                className="btn btn-primary me-2">
                 Get Assignment
             </a>
 
             <h4>Retrieving Properties</h4>
             <a
-                href="http://localhost:4000/a5/assignment/title"
+                href={`${URL}/title`}
                 className="btn btn-primary me-2">
                 Get Title
             </a>
@@ -85,20 +86,15 @@ function WorkingWithObjects() {
 
             <h4>Exercises</h4>
             <h5>Retrieving Objects</h5>
-            <a href="http://localhost:4000/a5/assignment"
-               className="btn btn-primary me-2">
+            <a href={`${URL}`} className="btn btn-primary me-2">
                 Get Assignment
             </a>
 
             <h5>Retrieve more object properties</h5>
-            <a
-                href="http://localhost:4000/a5/assignment/score"
-                className="btn btn-primary me-2">
+            <a href={`${URL}/score`} className="btn btn-primary me-2">
                 Get Score
             </a>
-            <a
-                href="http://localhost:4000/a5/assignment/completed"
-                className="btn btn-primary me-2">
+            <a href={`${URL}/completed`} className="btn btn-primary me-2">
                 Get Complete Status
             </a>
 

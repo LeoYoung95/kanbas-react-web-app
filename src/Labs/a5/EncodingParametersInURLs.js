@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+const BASE= process.env.REACT_APP_BASE;
 function EncodingParametersInURLs() {
     const [a, setA] = useState(34);
     const [b, setB] = useState(23);
     const [welcome, setWelcome] = useState("");
     const [result, setResult] = useState(0);
     const fetchSum = async (a, b) => {
-        const response = await
-            axios.get(`http://localhost:4000/a5/add/${a}/${b}`);
+        const response = await axios.get(`${BASE}/a5/add/${a}/${b}`);
         setResult(response.data);
     };
+
     const fetchSubtraction = async (a, b) => {
-        const response = await axios.get(
-            `http://localhost:4000/a5/subtract/${a}/${b}`);
+        const response = await axios.get(`${BASE}/a5/subtract/${a}/${b}`);
         setResult(response.data);
     };
 
     const fetchWelcome = async () => {
-        const response = await axios.get("http://localhost:4000/a5/welcome");
+        const response = await axios.get(`${BASE}/a5/welcome`);
         setWelcome(response.data);
     };
     useEffect(() => {
@@ -58,53 +58,49 @@ function EncodingParametersInURLs() {
 
             <h3>Path Parameters</h3>
             <a
-                href={`http://localhost:4000/a5/add/${a}/${b}`}
+                href={`${BASE}/a5/add/${a}/${b}`}
                 className="btn btn-primary">
                 Add {a} + {b}
             </a>
             <a
-                href={`http://localhost:4000/a5/subtract/${a}/${b}`}
+                href={`${BASE}/a5/subtract/${a}/${b}`}
                 className="btn btn-danger">
                 Substract {a} - {b}
             </a>
 
             <h3>Query Parameters</h3>
             <a
-                href={`http://localhost:4000/a5/calculator?operation=add&a=${a}&b=${b}`}
+                href={`${BASE}/a5/calculator?operation=add&a=${a}&b=${b}`}
                 className="btn btn-primary">
                 Add {a} + {b}
             </a>
             <a
-                href={`http://localhost:4000/a5/calculator?operation=subtract&a=${a}&b=${b}`}
+                href={`${BASE}/a5/calculator?operation=subtract&a=${a}&b=${b}`}
                 className="btn btn-danger">
                 Subtract {a} - {b}
             </a>
 
             <h3>Exercises</h3>
             <a
-                href={`http://localhost:4000/a5/multiply/${a}/${b}`}
+                href={`${BASE}/a5/multiply/${a}/${b}`}
                 className="btn btn-primary">
                 Multiply-Path {a} * {b}
             </a>
             <a
-                href={`http://localhost:4000/a5/divide/${a}/${b}`}
+                href={`${BASE}/a5/divide/${a}/${b}`}
                 className="btn btn-danger">
                 Divide-Path {a} / {b}
             </a>
             <a
-                href={`http://localhost:4000/a5/calculator?operation=multiply&a=${a}&b=${b}`}
+                href={`${BASE}/a5/calculator?operation=multiply&a=${a}&b=${b}`}
                 className="btn btn-primary">
                 Multiply-Query {a} * {b}
             </a>
             <a
-                href={`http://localhost:4000/a5/calculator?operation=divide&a=${a}&b=${b}`}
+                href={`${BASE}/a5/calculator?operation=divide&a=${a}&b=${b}`}
                 className="btn btn-danger">
                 Divide-Query {a} / {b}
             </a>
-
-
-
-
         </div>
     );
 }
