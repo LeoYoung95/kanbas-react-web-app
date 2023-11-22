@@ -280,8 +280,8 @@ buildings:
     - mosque
     - place-of-worship
     - school
-    - store
-    - store-alt
+    - Store
+    - Store-alt
     - synagogue
     - torii-gate
     - university
@@ -354,7 +354,7 @@ business:
     - phone-square-alt
     - phone-volume
     - print
-    - project-diagram
+    - Project-diagram
     - registered
     - save
     - sitemap
@@ -493,7 +493,7 @@ code:
     - keyboard
     - laptop-code
     - microchip
-    - project-diagram
+    - Project-diagram
     - qrcode
     - shield-alt
     - sitemap
@@ -2142,10 +2142,10 @@ shopping:
     - shopping-bag
     - shopping-basket
     - shopping-cart
-    - store
-    - store-alt
-    - store-alt-slash
-    - store-slash
+    - Store
+    - Store-alt
+    - Store-alt-slash
+    - Store-slash
     - truck
     - tshirt
   label: Shopping

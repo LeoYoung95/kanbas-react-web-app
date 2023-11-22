@@ -3140,7 +3140,7 @@ cash-register:
       - pay
       - payment
       - purchase
-      - store
+      - Store
   styles:
     - solid
   unicode: f788
@@ -18583,7 +18583,7 @@ tasks:
       - downloads
       - loading
       - progress
-      - project management
+      - Project management
       - settings
       - to do
   styles:

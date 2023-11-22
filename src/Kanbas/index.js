@@ -2,7 +2,7 @@ import KanbasNavigation from "./KanbasNavigation";
 import {Routes, Route, Navigate} from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
-import store from "./store";
+import store from "./Store";
 import {Provider} from "react-redux";
 
 function Kanbas() {
@@ -23,6 +23,7 @@ function Kanbas() {
                                 <Dashboard/>}/>
                             <Route path="Courses/:courseId/*" element={
                                 <Courses/>}/>
+
                         </Routes>
                     </div>
                 </div>
