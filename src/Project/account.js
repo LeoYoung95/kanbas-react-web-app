@@ -102,14 +102,14 @@ function Account() {
             )}
 
             <div className="row mb-3 padding-top-20">
-                <div className="col-4">
+                <div className="col-md-4 col-sm-6">
                     <div className="row g-2">
-                        <div className="col-6">
+                        <div className="col-12">
                             <button className="btn btn-primary w-100" onClick={save}>
                                 Save
                             </button>
                         </div>
-                        <div className="col-6">
+                        <div className="col-12 mt-2">
                             <button className="btn btn-danger w-100" onClick={signout}>
                                 Signout
                             </button>
@@ -118,17 +118,16 @@ function Account() {
                 </div>
             </div>
             <div className="row">
-                <div className="col-4 d-grid">
+                <div className="col-md-4 col-sm-6 d-grid">
                     <Link to="/project/admin/users" className="btn btn-warning w-100">
                         Users
                     </Link>
                 </div>
             </div>
-
-
         </div>
     );
 }
+
 
 export default Account;
 
