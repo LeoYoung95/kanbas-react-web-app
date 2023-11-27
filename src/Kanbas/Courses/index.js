@@ -30,7 +30,7 @@ function Courses() {
     const location = useLocation();
 
     const toggleNav = () => {
-        console.log("Toggling Nav");
+        console.log("Toggling Project_nav");
         setIsNavVisible(!isNavVisible);
     };
 

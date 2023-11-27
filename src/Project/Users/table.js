@@ -8,16 +8,22 @@ import {Link} from "react-router-dom";
 
 function UserTable() {
     const [users, setUsers] = useState([]);
-    const [user, setUser] = useState({username: "", password: "", role: "USER"});
+    const [user, setUser] = useState({username: "", password: "", role: "USER", firstName: "", lastName: ""  });
+
+    const resetUserState = () => {
+        setUser({username: "", password: "", role: "USER", firstName: "", lastName: ""});
+    };
     const createUser = async () => {
         try {
             const newUser = await client.createUser(user);
             setUsers([newUser, ...users]);
+            resetUserState();
         } catch (err) {
             console.log(err);
         }
     };
     const selectUser = async (user) => {
+        console.log(user);
         try {
             const u = await client.findUserById(user._id);
             setUser(u);
@@ -29,6 +35,7 @@ function UserTable() {
         try {
             const status = await client.updateUser(user);
             setUsers(users.map((u) => (u._id === user._id ? user : u)));
+            resetUserState()
         } catch (err) {
             console.log(err);
         }
@@ -41,8 +48,6 @@ function UserTable() {
             console.log(err);
         }
     };
-
-
 
     const fetchUsers = async () => {
         const users = await client.findAllUsers();
@@ -57,13 +62,13 @@ function UserTable() {
             <table className="table">
                 <thead>
 
-                <tr>
+                <tr key={"table_title"}>
                     <th>Username</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                 </tr>
 
-                <tr>
+                <tr key={"account_edit_area"}>
                     <td>
                         <input value={user.username} onChange={(e) => setUser({...user, username: e.target.value})}/>
                         <input value={user.password} onChange={(e) => setUser({...user, password: e.target.value})}/>
@@ -84,9 +89,9 @@ function UserTable() {
                     </td>
                     <td>
                         <BsFillCheckCircleFill onClick={updateUser}
-                                               className="me-2 text-success fs-1 text" />
+                                               className="me-2 text-success fs-1 text"/>
                         <BsPlusCircleFill onClick={createUser}
-                                          className="me-2 fs-1 text" />
+                                          className="me-2 fs-1 text"/>
                     </td>
                 </tr>
 
@@ -94,17 +99,18 @@ function UserTable() {
                 <tbody>
                 {users.map((user) => (
                     <tr key={user._id}>
-                        <Link to={`/project/account/${user._id}`}>
-                            {user.username}
-                        </Link>
-
+                        <td>
+                            <Link to={`/project/account/${user._id}`}>
+                                {user.username}
+                            </Link>
+                        </td>
                         <td>{user.firstName}</td>
                         <td>{user.lastName}</td>
                         <td>
                             <BsPencil onClick={() => selectUser(user)}
-                                      className="me-2 text-primary fs-1 text" />
+                                      className="me-2 text-primary fs-1 text"/>
                             <BsTrash3Fill onClick={() => deleteUser(user)}
-                                          className="me-2 text-danger fs-1 text" />
+                                          className="me-2 text-danger fs-1 text"/>
                         </td>
                     </tr>))}
                 </tbody>
