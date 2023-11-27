@@ -5,10 +5,12 @@ import Signin from "./Users/signin";
 import Account from "./account";
 import UserTable from "./Users/table";
 import Signup from "./Users/signup";
+import Nav from "../Nav";
 
 function Project() {
     return (
         <div className="row">
+            <Nav />
             <div className="col-2">
                 <Project_nav />
             </div>
