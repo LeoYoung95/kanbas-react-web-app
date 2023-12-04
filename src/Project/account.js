@@ -9,22 +9,31 @@ function Account() {
         const user = await client.findUserById(id);
         setAccount(user);
     };
-    useEffect(() => {
-        if (id) {
-            findUserById(id);
-        } else {
-            fetchAccount();
-        }
-    }, []);
 
     const navigate = useNavigate();
     const fetchAccount = async () => {
         const account = await client.account();
         setAccount(account);
     };
+
     useEffect(() => {
-        fetchAccount();
-    }, []);
+        if (id) {
+            findUserById(id);
+        } else {
+            fetchAccount();
+        }
+    }, [id]);
+
+    // Format the date received from MongoDB to match the "date" input format
+    useEffect(() => {
+        if (account && account.dob) {
+            const formattedDate = new Date(account.dob).toISOString().split('T')[0];
+            setAccount({
+                ...account,
+                dob: formattedDate
+            });
+        }
+    }, [account]);
 
     const save = async () => {
         await client.updateUser(account);
